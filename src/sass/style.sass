@@ -1,0 +1,36 @@
+*
+  margin: 0
+  img
+    max-width: 100%
+
+html 
+  font-family: "Roboto", sans-serif
+  
+body
+  // width: 1024px
+  
+
+@import "_footer.sass"
+
+.decor
+  &__line
+    &:after
+      content: ""
+      display: block
+      position: absolute
+      width: 100%
+      height: 1px
+      left: 0
+      bottom: 0
+      opacity: 0.4
+      background: #fff
+
+.flex
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  &--jc-c
+    justify-content: center
+  &--ai-fs
+    align-items: flex-start
+    
