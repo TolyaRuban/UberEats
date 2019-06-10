@@ -11,15 +11,81 @@
     margin-top: 32px
     padding-bottom: 48px
     align-items: flex-start
+    flex-wrap: wrap
     &__item
-      width: 324px
-      font-size: 13px
+      flex-basis: 33.3%
+      min-width: 190px
+      // width: 324px
       color: #fff
-      p 
-        margin-bottom: 28px
-        &:last-child
-          margin-bottom: 0
-  
+      font-size: 11px  
   &-apps
+    position: relative
     padding: 40px 0
     justify-content: center
+    align-items: center
+    a:first-child
+      margin-right: 41px
+
+  &__select-wrapper
+    position: relative
+    display: inline-block
+    margin-bottom: 33px
+    &::before
+      content: ""
+      position: absolute
+      top: 10px
+      left: 12.5px
+      width: 15.72px
+      height: 15.72px
+      background: url("../img/world.svg")
+      pointer-events: none
+    &::after
+      content: ""
+      position: absolute
+      top: 15px
+      right: 8px
+      width: 14px
+      height: 8px
+      background: url(../img/arrow.svg)
+      pointer-events: none
+
+  &__lang
+    padding: 12px 0 12px 46px
+    width: 227px
+    font-size: 13px
+    line-height: 15px
+    color: white
+    text-transform: uppercase 
+    background-color: #3B3B3B
+    border: none
+    border-radius: 2px
+    outline: none
+    -webkit-appearance: button
+  &__option
+    font-size: 13px
+    color:  white
+    outline: none
+    text-transform: uppercase 
+  
+  &__text
+    margin-bottom: 20px
+    font-size: 16px
+    line-height: 19px
+    span
+      color: #49A144
+  &__socials
+    img 
+      margin-right: 15px
+
+.nav
+  padding: 0
+  &-li 
+    list-style: none
+    margin-bottom: 28px
+    a
+      color: #fff
+      font-size: 13px
+      // padding-bottom: 28px
+    &:last-child
+      margin-bottom: 0
+  
